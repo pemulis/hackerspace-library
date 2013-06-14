@@ -16,8 +16,9 @@ development:
   adapter: postgresql
   encoding: unicode
   database: hackerspace_library_development
-  host: localhost
   pool: 5
+  username:
+  password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -42,10 +43,13 @@ test:
   encoding: unicode
   database: hackerspace_library_test
   pool: 5
+  username:
+  password:
 
 production:
   adapter: postgresql
   encoding: unicode
   database: hackerspace_library_production
-  host: localhost
   pool: 5
+  username:
+  password:
