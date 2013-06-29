@@ -1,4 +1,9 @@
 HackerspaceLibrary::Application.routes.draw do
+  root to: 'books#index'
+
+  resources :books
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
